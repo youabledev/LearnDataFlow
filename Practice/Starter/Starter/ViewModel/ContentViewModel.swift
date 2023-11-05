@@ -1,15 +1,15 @@
 //
 //  ContentViewModel.swift
-//  Final
+//  Starter
 //
-//  Created by zumin you on 2023/11/05.
+//  Created by zumin you on 2023/11/06.
 //
 
 import Foundation
 import Combine
 
 class ContentViewModel: ObservableObject {
-    @Published var user: [User] = []
+    var user: [User] = []
     private var cancellables = Set<AnyCancellable>()
     
     init() {
